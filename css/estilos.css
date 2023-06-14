@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 45;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #bb47a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: black;
+    width: 200vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+
+    justify-content: space-between;
+
+}
+
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   height: 100vh;
+
+}
+
+
+
+main div {
+    width: 45.83%;
+  
+
+}
+
+div img, video {
+
+width: 100%;
+
+}
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+
+    font-weight: 500;
+
+
+}
+
+header h1 {
+    font-family: 'Kanit', sans-serif;
+
+
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: #c67474;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a {
+
+    background-color: #212529;
+
+}
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+
+
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+
+
+}
+
+
+.lightboxOverlay { background-color: rgb(255, 4, 4);
+  
+
+}
+
+@media(max-width: 1024px) {
+  
+    nav div {
+        width: 50%;
+    }
+
+     header, section { 
+        margin-bottom: 20px;
+        height: auto;}
+        
+} 
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+    width: 50%;
+    margin-bottom: 2vh;
+    
+
+    }
+
+
+}
